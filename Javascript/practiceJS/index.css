@@ -1,0 +1,64 @@
+html{
+    height: 100%;
+    background-image: url('file:///C:/MyData/nodeJs/Javascript/practiceJS/backimage.jpg'); 
+    /* background-repeat: no-repeat; 
+    background-position: center; */
+    /* background-size: 100% 100%; */
+         
+}
+body{
+    margin: 10% auto;
+    overflow: auto;
+    /* bottom: 0;
+    left: 0;
+    right: 0; */
+    position: relative ;
+}
+#app{
+    width: 350px;
+    margin: auto;
+    background-color:mintcream;
+    box-shadow: 0 0 0 10px rgb(0,0,0,0.1);
+    border-radius: 20px;
+    padding: 20px; 
+}
+h2{
+    text-align: center;
+    margin: 0;
+    font-weight: 200;
+}
+.plates{
+    list-style: none;
+    text-align: left;
+    margin:0;
+    padding: 0;
+}
+.plates li{
+    border-bottom: 1px solid rgb(0,0,0,0.2);
+    padding: 10px 0;
+    font-weight: 100;
+    display: flex;
+}
+
+.plates label{
+    flex:20;
+    cursor: pointer;
+}
+.plates input{
+    display: none;
+}
+.plates input + label:before{
+    content:':|';
+    margin-right: 10px;
+}
+.plates input:checked + label:before{
+    content: ':)';   
+}
+.add-items{
+    margin-top: 20px;
+}
+.add-items input{
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgb(0,0,0,1);
+}
